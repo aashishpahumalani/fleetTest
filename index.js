@@ -51,7 +51,7 @@ app.get("/repositories/:owner/:repository/commits/:oid/diff", async (request, re
       }
     })
   
-    response.json(res.data);
+    response.json({data:res.data});
   });
 
 
